@@ -3,7 +3,6 @@ import { reactive, watch, onMounted } from 'vue';
 import { useStore } from '@/store';
 import { useRouter } from 'vue-router';
 import axios from 'axios';
-import BannerBox from '@/components/BannerBox.vue';
 
 const props = defineProps({
   mode: String,
@@ -116,7 +115,6 @@ onMounted(() => {
 </script>
 
 <template>
-<BannerBox></BannerBox>
   <div class="container mt-5">
     <div class="row">
       <div class="col">

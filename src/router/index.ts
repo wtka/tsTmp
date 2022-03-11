@@ -15,26 +15,26 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/CaseList.vue'),
     props: (route) => route.query,
   },
-  // {
-  //   path: '/openaccount',
-  //   component: () => import('../views/OpenAccount.vue'),
-  //   props: (route) => route.query,
-  // },
-  // {
-  //   path: '/todolist',
-  //   component: () => import('../views/CompletedTodoList.vue'),
-  //   props: (route) => route.query,
-  // },
-  // {
-  //   path: '/cardconfirm',
-  //   component: () => import('../views/CardConfirm.vue'),
-  //   props: (route) => route.query,
-  // },
-  // {
-  //   path: '/casequery',
-  //   component: () => import('../views/CompletedCaseQuery.vue'),
-  //   props: (route) => route.query,
-  // },
+  {
+    path: '/openaccount',
+    component: () => import('../views/OpenAccount.vue'),
+    props: (route) => route.query,
+  },
+  {
+    path: '/todolist',
+    component: () => import('../views/CompletedTodoList.vue'),
+    props: (route) => route.query,
+  },
+  {
+    path: '/cardconfirm',
+    component: () => import('../views/CardConfirm.vue'),
+    props: (route) => route.query,
+  },
+  {
+    path: '/casequery',
+    component: () => import('../views/CompletedCaseQuery.vue'),
+    props: (route) => route.query,
+  },
 ];
 
 const router = createRouter({

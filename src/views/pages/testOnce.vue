@@ -4,7 +4,7 @@ import { onMounted } from 'vue';
 import BannerBox from '@/components/BannerBox.vue';
 import MenuBox from '@/components/MenuBox.vue';
 
-defineProps({
+const props = defineProps({
   id: {
     type: String,
   },
@@ -12,6 +12,7 @@ defineProps({
 
 // const store = useStore();
 onMounted(() => {
+  console.log('id = ', props.id);
   // let menuCollapse = computed(() => store.getters.menuCollapse);
   // // menuCollapse.value.setting = true;
   // menuCollapse = {
