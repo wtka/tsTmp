@@ -1,0 +1,9 @@
+.ni-btn {
+  @extend .btn, .btn-primary, .rounded-pill, .fs-5, .text-light;
+  width: 120px;
+}
+
+.ch-lg {
+  width: 24px;
+  height: 24px;
+}
